@@ -171,6 +171,41 @@
     padding-left: 1rem;
 }
 
+/* ROTATING BANNER */
+
+.rotating-banner {
+    width: 100%;
+    background-color: lightgray;
+    height: 50vh;
+}
+
+.banner-wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+.image-wrapper {
+    width: 70%;
+    margin: 80px auto 20px auto;
+    
+}
+.image-wrapper .our-image {
+      display: block;
+      margin: 50px auto 0 auto;
+      width: 160px;
+      border-radius: 50%;
+      transition: all ease 0.3s;
+}
+.banner-wrapper .title {
+      margin:  0 auto;
+      width: 160px;
+      transition: all ease 0.3s;
+}
+.banner-wrapper .description {
+      margin:  0 auto;
+      width: 160px;
+      transition: all ease 0.3s;
+}
+
 @media(max-width: 680px){
     .banner .banner-title {
         width: 50%;
