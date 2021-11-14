@@ -173,7 +173,7 @@
 
 /* ROTATING BANNER */
 
-.rotating-banner {
+/* .rotating-banner {
     width: 100%;
     background-color: lightgray;
     height: 50vh;
@@ -203,8 +203,56 @@
 .banner-wrapper .description {
       margin:  0 auto;
       width: 160px;
-      transition: all ease 0.3s;
-}
+      /* transition: all ease 0.3s; */
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        margin: 0 auto;
+        background-color: lightgray;
+    }
+    
+    .banner-wrapper {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        margin: 0 auto;
+        overflow: hidden;
+       
+    }
+    
+    .slide-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+    
+    .images {
+        width: 100%;
+        display: block;
+        transition: transform .5s ease-in-out;
+    }
+    
+    #first-image {
+        transform: translateX(0);
+    }
+    #second-image {
+        transform: translateX(101%);
+    }
+    #third-image {
+        transform: translateX(201%);
+    }
+    #fourth-image {
+        transform: translateX(301%);
+    }
+    #fifth-image {
+        transform: translateX(401%);
+    }
 
 @media(max-width: 680px){
     .banner .banner-title {
@@ -363,7 +411,7 @@ margin-top: 0;
 
 .choose-plan h4 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .different-plans {
